@@ -6,145 +6,270 @@
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="fixed w-full flex justify-between bg-gray-500 px-5 py-3">
-      <div class="flex items-center gap-3">
+    <div
+      class="fixed flex w-full items-center justify-between bg-gray-500 px-12 py-2"
+    >
+      <div class="flex items-center gap-8">
         <img
-          class="h-16 w-16 object-cover rounded-full"
+          class="h-16 w-16 rounded-full object-cover"
           src="../dist/img/ppkucing.jpg"
           alt="Kucing"
         />
-        <p class="font-bold">Kucing</p>
+        <p href="#" class="text-xl font-bold hover:text-white">Kucing</p>
       </div>
-      <ul class="flex gap-5 items-center">
-        <li class="font-bold">Home</li>
-        <li class="font-bold">About</li>
-        <li class="font-bold">Project</li>
-        <li class="font-bold">Contact</li>
-      </ul>
+      <div id="menuGambar" class="xl:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-6 w-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </div>
+      <div>
+        <ul id="menu" class="gap16 flex flex-col items-center xl:flex">
+          <a href="#" class="text-xl font-bold text-black hover:text-white"
+            >Home</a
+          >
+          <a href="#" class="text-xl font-bold text-black hover:text-white"
+            >About</a
+          >
+          <a href="#" class="text-xl font-bold text-black hover:text-white"
+            >Project</a
+          >
+          <a href="#" class="text-xl font-bold text-black hover:text-white"
+            >Contact</a
+          >
+        </ul>
+      </div>
     </div>
     <div
-      class="bg-blue-300 px-5 min-h-screen w-full flex justify-center items-center flex-col"
+      class="flex min-h-screen w-full flex-col items-center justify-center bg-blue-300 px-5"
     >
-      <h1 class="mb-5 text-4xl text-white text-center font-bold">
-        Hello, My name is Kucing
+      <h1 class="target:Home mb-5 text-center text-5xl font-bold text-white">
+        HELLO, MY NAME IS KUCING
       </h1>
-      <p class="mb-5 text-center text-white">
+      <p class="mb-5 text-center text-xl text-white">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
         numquam temporibus ipsa exercitationem ex magni nihil fugit minus,
         libero quos.
       </p>
-      <button class="bg-white px-16 py-3 rounded font-bold">Start</button>
+      <button class="rounded bg-white px-16 py-3 font-bold">Start</button>
     </div>
-    <div class="bg-gray-200">
-      <div class="w-full flex justify-center items-center flex-col pb-10">
-        <h1 class="font-bold mb-3 text-3xl">About Me!</h1>
-        <hr class="w-64 h-2 bg-black rounded" />
-        <p class="mt-4">
+    <div class="min-h-screen bg-gray-200">
+      <div class="flex w-full flex-col items-center justify-center pb-10">
+        <h1 id="About" class="mb-3 pt-24 text-4xl font-bold tracking-[0.5rem]">
+          ABOUT ME!
+        </h1>
+        <hr class="h-2 w-52 rounded bg-black" />
+        <p class="mb-12 mt-4 text-center text-xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
           iusto!
         </p>
       </div>
-      <div class="lg:flex">
-        <div class="px-5 container mx-auto">
-          <h1 class="font-bold text-2xl pb-3 leading-normal">
+      <div class="pb-24 lg:flex">
+        <div class="container mx-auto px-5">
+          <h1 class="pb-3 text-2xl font-bold leading-normal">
             Get to know me!
           </h1>
-          <p class="text-justify">
+          <p class="text-justify text-xl">
             Hey! It's
-            <span class="font-bold"> John Doe </span>
+            <span class="text-xl font-bold"> John Doe </span>
             I'm a
-            <span class="font-bold">Frontend Web Developer </span> located
-            in<span class="font-bold"> Los Angeles. </span>
+            <span class="text-xl font-bold">Frontend Web Developer </span>
+            located in<span class="text-xl font-bold"> Los Angeles. </span>
             I've done remote projects for agencies, consulted for startups, and
             collaborated with talented people to create digital products for
             both business and consumer use.
           </p>
-          <p class="mt-5 text-justify">
+          <p class="mt-5 text-justify text-xl">
             I'm a bit of a digital product junky. Over the years, I've used
             hundreds of web and mobile apps in different industries and
             verticals. Feel free to contact me here.
           </p>
           <button
-            class="mt-10 rounded bg-blue-300 text-white py-3 px-9 items-center"
+            class="mt-10 items-center rounded bg-blue-300 px-9 py-3 text-xl text-white"
           >
             Contact
           </button>
         </div>
-        <div class="px-5 container mx-auto mt-10">
-          <h1 class="font-bold text-2xl mb-5">My Skills</h1>
-          <ul class="flex gap-3 flex-wrap pb-16">
-            <li class="w-20 bg-slate-400 text-center text-white py-1 rounded">
-              AAA
+        <div class="container mx-auto mt-10 px-5">
+          <h1 class="mb-5 text-2xl font-bold">My Skills</h1>
+          <ul class="flex flex-wrap gap-3">
+            <li
+              class="rounded bg-slate-400 px-5 py-1 pb-2 pt-2 text-center text-xl text-white"
+            >
+              PLAYING
             </li>
-            <li class="w-20 bg-slate-400 text-center text-white py-1 rounded">
-              BBB
+            <li
+              class="rounded bg-slate-400 px-5 py-1 pb-2 pt-2 text-center text-xl text-white"
+            >
+              EATING
             </li>
-            <li class="w-20 bg-slate-400 text-center text-white py-1 rounded">
-              CCC
+            <li
+              class="rounded bg-slate-400 px-5 py-1 pb-2 pt-2 text-center text-xl text-white"
+            >
+              SLEEPING
             </li>
-            <li class="w-20 bg-slate-400 text-center text-white py-1 rounded">
-              DDD
+            <li
+              class="rounded bg-slate-400 px-5 py-1 pb-2 pt-2 text-center text-xl text-white"
+            >
+              RUNNING
             </li>
-            <li class="w-20 bg-slate-400 text-center text-white py-1 rounded">
-              EEE
+            <li
+              class="rounded bg-slate-400 px-5 py-1 pb-2 pt-2 text-center text-xl text-white"
+            >
+              BOSS
             </li>
-            <li class="w-20 bg-slate-400 text-center text-white py-1 rounded">
-              FFF
+            <li
+              class="rounded bg-slate-400 px-5 py-1 pb-2 pt-2 text-center text-xl text-white"
+            >
+              CUTE
             </li>
-            <li class="w-20 bg-slate-400 text-center text-white py-1 rounded">
-              GGG
+            <li
+              class="rounded bg-slate-400 px-5 py-1 pb-2 pt-2 text-center text-xl text-white"
+            >
+              CLAW
             </li>
-            <li class="w-20 bg-slate-400 text-center text-white py-1 rounded">
-              HHH
+            <li
+              class="rounded bg-slate-400 px-5 py-1 pb-2 pt-2 text-center text-xl text-white"
+            >
+              DESTROYING
             </li>
-            <li class="w-20 bg-slate-400 text-center text-white py-1 rounded">
-              III
+            <li
+              class="rounded bg-slate-400 px-5 py-1 pb-2 pt-2 text-center text-xl text-white"
+            >
+              FISH
             </li>
-            <li class="w-20 bg-slate-400 text-center text-white py-1 rounded">
-              JJJ
+            <li
+              class="rounded bg-slate-400 px-5 py-1 pb-2 pt-2 text-center text-xl text-white"
+            >
+              LEAKING
             </li>
-            <li class="w-20 bg-slate-400 text-center text-white py-1 rounded">
-              KKK
+            <li
+              class="rounded bg-slate-400 px-5 py-1 pb-2 pt-2 text-center text-xl text-white"
+            >
+              HUMAN
             </li>
           </ul>
         </div>
       </div>
-      <div class="w-full pb-96 px-5">
-        <h1 class="text-4xl font-bold tracking-[0.5rem] text-center">
-          PROJECTS
-        </h1>
-        <hr class="mt-3 mb-5 w-52 h-2 bg-black rounded mx-auto" />
-        <p class="text-center mb-10">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut est ex
-          velit rem quam placeat amet at voluptates odit adipisci ut porro nisi
-          blanditiis, reiciendis culpa iste nemo, modi atque.
-        </p>
-
-        <div class="max-w-xl mx-auto lg:flex lg:w-full lg:container bg-cyan-50">
-          <img
-            class="max-w-sm mx-auto shadow-2xl lg:w-full"
-            src="../dist/img/ppkucing.jpg"
-            alt=""
-          />
-          <div class="lg:max-w-md bg-red-200">
-            <h1 class="font-bold text-center mb-5 mt-3 lg:text-left lg:text-xl">
-              Project 1
-            </h1>
-            <p class="text-center lg:text-left">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero at
-              velit reprehenderit libero corporis fugit possimus, totam ut ipsa
-              accusantium.
-            </p>
-            <div class="w-full pt-5 flex justify-center">
-              <button
-                class="rounded text-white bg-slate-800 w-32 h-8 hover:-translate-y-1 ease-in-out duration-500 mb-10"
-              >
-                CASE STUDY
-              </button>
-            </div>
+    </div>
+    <div id="Project" class="w-full px-5 pb-96 pt-24">
+      <h1 class="text-center text-4xl font-bold tracking-[0.5rem]">PROJECTS</h1>
+      <hr class="mx-auto mb-5 mt-3 h-2 w-52 rounded bg-black" />
+      <p class="mb-16 text-center text-lg">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut est ex
+        velit rem quam placeat amet at voluptates odit adipisci ut porro nisi
+        blanditiis, reiciendis culpa iste nemo, modi atque.
+      </p>
+      <div class="mx-auto mb-16 max-w-xl lg:container lg:flex lg:w-full">
+        <img
+          class="mx-auto max-w-md shadow-2xl lg:w-full"
+          src="../dist/img/ppkucing.jpg"
+          alt=""
+        />
+        <div class="lg:max-w-md">
+          <h1
+            class="mb-7 mt-3 text-center text-lg font-bold lg:text-left lg:text-xl"
+          >
+            Project 1
+          </h1>
+          <p class="text-center text-lg lg:pb-6 lg:text-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero at
+            velit reprehenderit libero corporis fugit possimus, totam ut ipsa
+            accusantium.
+          </p>
+          <div class="flex w-full justify-center pt-5">
+            <a
+              href="#"
+              class="rounded bg-slate-800 px-4 pb-2 pt-3 text-lg font-bold text-white duration-500 ease-in-out hover:-translate-y-1"
+            >
+              CASE STUDY</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto mb-16 max-w-xl lg:container lg:flex lg:w-full">
+        <img
+          class="mx-auto max-w-md shadow-2xl lg:w-full"
+          src="../dist/img/ppkucing.jpg"
+          alt=""
+        />
+        <div class="lg:max-w-md">
+          <h1
+            class="mb-7 mt-3 text-center text-lg font-bold lg:text-left lg:text-xl"
+          >
+            Project 2
+          </h1>
+          <p class="text-center text-lg lg:pb-6 lg:text-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero at
+            velit reprehenderit libero corporis fugit possimus, totam ut ipsa
+            accusantium.
+          </p>
+          <div class="flex w-full justify-center pt-5">
+            <a
+              href="#"
+              class="rounded bg-slate-800 px-4 pb-2 pt-3 text-lg font-bold text-white duration-500 ease-in-out hover:-translate-y-1"
+            >
+              CASE STUDY</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto max-w-xl lg:container lg:flex lg:w-full">
+        <img
+          class="mx-auto max-w-md shadow-2xl lg:w-full"
+          src="../dist/img/ppkucing.jpg"
+          alt=""
+        />
+        <div class="lg:max-w-md">
+          <h1
+            class="mt-7 text-center text-lg font-bold lg:text-left lg:text-xl"
+          >
+            Project 3
+          </h1>
+          <p class="text-center text-lg lg:pb-6 lg:text-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero at
+            velit reprehenderit libero corporis fugit possimus, totam ut ipsa
+            accusantium.
+          </p>
+          <div class="flex w-full justify-center pt-5">
+            <a
+              href="#"
+              class="rounded bg-slate-800 px-4 pb-2 pt-3 text-lg font-bold text-white duration-500 ease-in-out hover:-translate-y-1"
+            >
+              CASE STUDY</a
+            >
           </div>
         </div>
       </div>
     </div>
+    <div class="bg-black">
+      <div class="mx-auto flex max-w-lg flex-col items-center">
+        <div>
+          <h1 class="text-white">JOHN DOE</h1>
+          <p class="text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae, reprehenderit?
+          </p>
+        </div>
+        <div>
+          <h1 class="text-white">JOHN DOE</h1>
+          <p class="text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae, reprehenderit?
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="../dist/javascript/script.js"></script>
   </body>
 </html>
